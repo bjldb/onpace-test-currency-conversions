@@ -1,0 +1,15 @@
+<tr>
+  <th>Currency 1</th>
+  <th>Currency 2</th>
+  <th>Rate</th>
+  <th></th>
+</tr>
+
+<% conversions.each do |conversion| %>
+  <tr>
+    <td><%= conversion.convert_from %></td>
+    <td><%= conversion.convert_to %></td>
+    <td><%= get_rate_text(conversion.rate) %></td>
+    <td><%= link_to '<Remove>', conversion_path(conversion), method: :delete %></td>
+  </tr>
+<% end %>

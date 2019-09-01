@@ -1,0 +1,10 @@
+<h1>Currency Conversions</h1>
+
+<%= render partial: 'error_block', locals: { error_message: @error_message } %>
+
+<%= render partial: 'fetch_time_block', locals: { fetch_time: @fetch_time } %>
+
+<table>
+  <%= render partial: 'conversions_table', locals: { conversions: @conversions } %>
+  <%= render partial: 'add_conversion_form' %>
+</table>

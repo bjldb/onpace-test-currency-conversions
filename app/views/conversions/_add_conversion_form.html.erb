@@ -1,0 +1,8 @@
+<%= form_with scope: :conversion, local: true do |form| %>
+  <tr>
+    <td><%= form.text_field :convert_from %></td>
+    <td><%= form.text_field :convert_to %></td>
+    <td></td>
+    <td><%= form.submit "SAVE" %></td>
+  </tr>
+<% end %>
